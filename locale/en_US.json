@@ -15,8 +15,6 @@
     "dialog.decline"       : "Decline",
     "dialog.accept"        : "Accept",
     "dialog.tapme"         : "Tap me to close",
-    "dropdown.dinosaur"    : "Dinosaur",
-    "dropdown.letter"      : "Letter",
     "element.inbox"        : "Inbox",
     "element.starred"      : "Starred",
     "element.sentmail"     : "Sent mail",
