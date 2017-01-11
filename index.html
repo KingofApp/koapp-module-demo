@@ -134,7 +134,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <div class='buttons'>
-          <koa-button dialog-confirm autofocus>dialog.tapme</koa-button>
+          <koa-button dialog-confirm autofocus translate>dialog.tapme</koa-button>
         </div>
       </koa-dialog>
     </section>
@@ -163,7 +163,7 @@
           <koa-dropdown-menu label='Dinosaurs'>
             <koa-menu class='dropdown-content'>
               <template is='dom-repeat' items='[[dinosaurs]]' as='dinosaur'>
-                <koa-item translate>[[dropdown.dinosaur]]</koa-item>
+                <koa-item>[[dinosaur]]</koa-item>
               </template>
             </koa-menu>
           </koa-dropdown-menu>
@@ -172,7 +172,7 @@
           <koa-dropdown-menu label='Dinosaurs'>
             <koa-menu class='dropdown-content' selected='1'>
               <template is='dom-repeat' items='[[dinosaurs]]' as='dinosaur'>
-                <koa-item translate>[[dropdown.dinosaur]]</koa-item>
+                <koa-item>[[dinosaur]]</koa-item>
               </template>
             </koa-menu>
           </koa-dropdown-menu>
@@ -181,7 +181,7 @@
           <koa-dropdown-menu disabled label='Disabled'>
             <koa-menu class='dropdown-content'>
               <template is='dom-repeat' items='[[letters]]' as='letter'>
-                <koa-item translate>[[dropdown.letter]]</koa-item>
+                <koa-item>[[letter]]</koa-item>
               </template>
             </koa-menu>
           </koa-dropdown-menu>
@@ -383,7 +383,7 @@
           <koa-icon-button icon='menu' class='dropdown-trigger' alt='menu'></koa-icon-button>
           <koa-menu class='dropdown-content'>
             <template is='dom-repeat' items='[[letters]]' as='letter'>
-              <koa-item translate>[[dropdown.letter]]</koa-item>
+              <koa-item>[[letter]]</koa-item>
             </template>
           </koa-menu>
         </koa-menu-button>
@@ -392,7 +392,7 @@
           </koa-icon-button>
           <koa-menu class='dropdown-content'>
             <template is='dom-repeat' items='[[letters]]' as='letter'>
-              <koa-item translate>[[dropdown.letter]]</koa-item>
+              <koa-item>[[letter]]</koa-item>
             </template>
           </koa-menu>
         </koa-menu-button>
