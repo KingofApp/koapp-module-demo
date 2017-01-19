@@ -2,20 +2,20 @@
   "name": "demo",
   "identifier": "demo",
   "description": {
-    "es-ES": "Módulo que incluye todos los elementos configurables para crear una plantilla.",
-    "en-US": "A module that includes all configurable elements to create a template."
+    "es-ES": "Módulo que incluye todos los elementos configurables para crear un tema.",
+    "en-US": "A module that includes all configurable elements to create a theme."
   },
   "documentation": {
-    "es-ES": "",
-    "en-US": ""
+    "es-ES": "Módulo que incluye todos los elementos configurables para crear un tema. Este módulo está pensado para ayudar a visualizar todos los elementos comunes dentro de un tema con los diferentes cambios de diseño que se le apliquen al tema.",
+    "en-US": "A module that includes all configurable elements to create a theme. This module is designed to help visualize all the common elements within a theme with the different design changes that apply to the theme."
   },
   "descriptionShort": {
-    "es-ES": "Módulo que incluye todos los elementos configurables para crear una plantilla.",
-    "en-US": "A module that includes all configurable elements to create a template."
+    "es-ES": "Módulo que incluye todos los elementos configurables para crear una tema.",
+    "en-US": "A module that includes all configurable elements to create a theme."
   },
   "icon": "room",
   "type": "A",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "King of app",
   "category": ["module"],
   "price": 0,
