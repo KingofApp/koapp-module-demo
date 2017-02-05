@@ -28,7 +28,7 @@
   ],
   "view": "modules/demo/index.html",
   "files": [
-    "modules/demo/controller.js", "modules/demo/style.html"
+    "modules/demo/controller.js", "modules/demo/style.html", "modules/demo/grid/grid.css"
   ],
   "scope": {"demoKey": "demo text"},
   "libs": [],
