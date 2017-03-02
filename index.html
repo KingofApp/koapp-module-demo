@@ -6,13 +6,17 @@
     border-bottom: 2px solid black;
   }
   div.element {
-    margin-bottom: 1.5em;
+    margin-bottom: 2em;
+  }
+
+  div.not-clickable {
+    /*pointer-events:none;*/
   }
 </style>
 
 <section class='koapp-element'>
   <h3 id="koabadge">koa-badge</h3>
-  <div class='element'>
+  <div class='element not-clickable'>
     <koa-icon-button id='number' icon='add-box' alt='inbox'></koa-icon-button>
     <koa-badge for='number' label='4'></koa-badge>
   </div>
@@ -21,59 +25,61 @@
 </section>
 
 <section class='koapp-element'>
-  <h3 id="koabutton">Button</h3>
+  <h3 id="koabutton">koa-button</h3>
   <div class="row">
     <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
-      <div class='element'>
-        <koa-button translate>Standard</koa-button>
+      <div class='element not-clickable'>
+        <koa-button translate>standar.button</koa-button>
       </div>
-      <div class='element'>
-        <koa-button pressed translate>Active/Selected</koa-button>
+      <div class='element not-clickable'>
+        <koa-button pressed translate>active.selected</koa-button>
       </div>
-      <div class='element'>
-        <koa-button disabled translate>Disabled</koa-button>
-      </div>
-    </div>
-    <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
-      <div class='element'>
-        <koa-button big translate>Standard</koa-button>
-      </div>
-      <div class='element'>
-        <koa-button pressed big translate>Active/Selected</koa-button>
-      </div>
-      <div class='element'>
-        <koa-button big disabled translate>Disabled</koa-button>
+      <div class='element not-clickable'>
+        <koa-button disabled translate>disabled.button</koa-button>
       </div>
     </div>
     <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
-      <div class='element'>
-        <koa-button link translate>Standard</koa-button>
+      <div class='element not-clickable'>
+        <koa-button big translate>standar.button</koa-button>
       </div>
-      <div class='element'>
-        <koa-button link pressed translate>Active/Selected</koa-button>
+      <div class='element not-clickable'>
+        <koa-button pressed big translate>active.selected</koa-button>
       </div>
-      <div class='element'>
-        <koa-button link disabled translate>Disabled</koa-button>
+      <div class='element not-clickable'>
+        <koa-button big disabled translate>disabled.button</koa-button>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+      <div class='element not-clickable'>
+        <koa-button link translate>standar.button</koa-button>
+      </div>
+      <div class='element not-clickable'>
+        <koa-button link pressed translate>active.selected</koa-button>
+      </div>
+      <div class='element not-clickable'>
+        <koa-button link disabled translate>disabled.button</koa-button>
       </div>
     </div>
   </div>
 
+  </div>
+
 </section>
  <section class='koapp-element'>
-   <h3 id="koacard">Cards</h3>
-    <div class="row">
+   <h3 id="koacard">koa-card</h3>
+    <div class="row not-clickable">
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-        <h3>Standard</h3>
-        <koa-card heading='Standard' subtext="Some subtext" image='http://lorempixel.com/325/190/'>
+        <h3 translate>standar.button</h3>
+        <koa-card heading='Standar' translate subtext="Some subtext" image='http://placehold.it/325x190'>
           <div class='card-content'>
             Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae.
           </div>
           <div class='card-actions'>
-            <koa-button link>Cancel</koa-button>
-            <koa-button link pressed translate>Accept</koa-button>
+            <koa-button link translate>cancel.button</koa-button>
+            <koa-button link pressed translate>dialog.accept</koa-button>
           </div>
         </koa-card>
-        <koa-card heading='Photo + Title + Subtitle + Text' subtext="Some subtext"  image='http://lorempixel.com/190/325/'>
+        <koa-card heading='Photo + Title + Subtitle + Text' subtext="Some subtext"  image='http://placehold.it/190x325'>
           <div class='card-content'>
             Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae.
           </div>
@@ -88,7 +94,7 @@
       </div>
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
         <h3>Horizontal</h3>
-        <koa-card horizontal='true' heading='Standard' subtext="Some subtext" image='http://lorempixel.com/325/190/'>
+        <koa-card horizontal='true' heading='Standard' subtext="Some subtext" image='http://placehold.it/325x190'>
           <div class='card-content'>
             Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae.
           </div>
@@ -102,7 +108,7 @@
             Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae.
           </div>
         </koa-card>
-        <koa-card horizontal='true' heading='Photo + Title + Text' image='http://lorempixel.com/190/325/'>
+        <koa-card horizontal='true' heading='Photo + Title + Text' image='http://placehold.it/190x325'>
           <div class='card-content'>
             Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae.
           </div>
@@ -117,76 +123,32 @@
     <h3 id="koacheckbox">koa-checkbox</h3>
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <div class='element'>
-          <koa-checkbox>Standard</koa-checkbox>
+        <div class='element not-clickable'>
+          <koa-checkbox translate>standar.button</koa-checkbox>
         </div>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <div class='element'>
+        <div class='element not-clickable'>
           <koa-checkbox focused>Focused</koa-checkbox>
         </div>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <div class='element'>
-          <koa-checkbox checked>Active/Selected</koa-checkbox>
+        <div class='element not-clickable'>
+          <koa-checkbox checked translate>active.selected</koa-checkbox>
         </div>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <div class='element'>
-          <koa-checkbox subtext="Some subtext">With Subtext</koa-checkbox>
+        <div class='element not-clickable'>
+          <koa-checkbox subtext="Some subtext" translate>with.subtext</koa-checkbox>
         </div>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <div class='element'>
+        <div class='element not-clickable'>
           <koa-checkbox disabled translate>disabled.checkbox</koa-checkbox>
         </div>
       </div>
     </div>
   </section>
-
-  <section class='koapp-element'>
-    <h3 id="koaradiobutton">koa-radio-button</h3>
-    <div class='element'>
-      <koa-radio-button id="radiobuttontest">Radio button</koa-radio-button>
-    </div>
-    <div class='element'>
-      <koa-radio-button checked>Radio button</koa-radio-button>
-    </div>
-    <div class='element'>
-      <koa-radio-button disabled translate>disabled.checkbox</koa-radio-button>
-    </div>
-  </section>
-
-  <section class='koapp-element'>
-   <h3 id="koaradio-button">koa-radio-button</h3>
-   <div class="row">
-     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-       <div class='element'>
-         <koa-radio-button>Standard</koa-radio-button>
-       </div>
-     </div>
-     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-       <div class='element'>
-         <koa-radio-button focused>Focused</koa-radio-button>
-       </div>
-     </div>
-     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-       <div class='element'>
-         <koa-radio-button checked>Active/Selected</koa-radio-button>
-       </div>
-     </div>
-     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-       <div class='element'>
-         <koa-radio-button subtext="Some subtext">With Subtext</koa-radio-button>
-       </div>
-     </div>
-     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-       <div class='element'>
-         <koa-radio-button disabled translate>disabled.checkbox</koa-radio-button>
-       </div>
-     </div>
-   </div>
- </section>
 
  <section class='koapp-element' onclick='clickHandlerDialog(event)'>
     <h3 id="koadialog">koa-dialog</h3>
@@ -260,8 +222,8 @@
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class='element'>
-              <koa-dropdown-menu label='Standard'>
-                <koa-menu class='dropdown-content'>
+              <koa-dropdown-menu class="not-clickable" label='Standar'>
+                <koa-menu class='dropdown-content' selected='1'>
                   <template is='dom-repeat' items='[[dinosaurs]]' as='dinosaur'>
                     <koa-item>[[dinosaur]]</koa-item>
                   </template>
@@ -271,8 +233,8 @@
           </div>
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class='element'>
-              <koa-dropdown-menu label='Focused' focused selected='1'>
-                <koa-menu class='dropdown-content'>
+              <koa-dropdown-menu class="not-clickable" label='Focused'  focused >
+                <koa-menu class='dropdown-content' selected='1'>
                   <template is='dom-repeat' items='[[dinosaurs]]' as='dinosaur'>
                     <koa-item>[[dinosaur]]</koa-item>
                   </template>
@@ -282,7 +244,18 @@
           </div>
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class='element'>
-              <koa-dropdown-menu label='Active/Selected'>
+              <koa-dropdown-menu class="not-clickable" label='Active/Selected' selected>
+                <koa-menu class='dropdown-content' selected='1'>
+                  <template is='dom-repeat' items='[[dinosaurs]]' as='dinosaur'>
+                    <koa-item>[[dinosaur]]</koa-item>
+                  </template>
+                </koa-menu>
+              </koa-dropdown-menu>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class='element'>
+              <koa-dropdown-menu label='Open' selected>
                 <koa-menu class='dropdown-content' selected='1'>
                   <template is='dom-repeat' items='[[dinosaurs]]' as='dinosaur'>
                     <koa-item>[[dinosaur]]</koa-item>
@@ -294,7 +267,7 @@
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class='element'>
               <koa-dropdown-menu disabled label='Disabled'>
-                <koa-menu class='dropdown-content'>
+                <koa-menu class='dropdown-content' selected='3'>
                   <template is='dom-repeat' items='[[letters]]' as='letter'>
                     <koa-item>[[letter]]</koa-item>
                   </template>
@@ -309,17 +282,17 @@
 
     <script>
       DemoDropdownMenu.letters = ['alpha', 'beta', 'gamma', 'delta', 'epsilon'];
-      DemoDropdownMenu.dinosaurs = ['allosaurus', 'brontosaurus', 'carcharodontosaurus', 'diplodocus', 'ekrixinatosaurus', 'fukuiraptor', 'gallimimus', 'hadrosaurus', 'iguanodon', 'jainosaurus', 'kritosaurus', 'liaoceratops', 'megalosaurus', 'nemegtosaurus', 'ornithomimus', 'protoceratops', 'quetecsaurus', 'rajasaurus', 'stegosaurus', 'triceratops', 'utahraptor', 'vulcanodon', 'wannanosaurus', 'xenoceratops', 'yandusaurus', 'zephyrosaurus' ];
+      DemoDropdownMenu.dinosaurs = ['allosaurus', 'brontosaurus', 'carcharodontosaurus', 'diplodocus', 'ekrixinatosaurus'];
     </script>
 
 
  <section class='koapp-element'>
-      <h3 id="koagrid">Grid</h3>
-      <div class="row">
+      <h3 id="koagrid">koa-grid</h3>
+      <div class="row not-clickable">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h4>Standard</h4>
+          <h4 translate>standar.button</h4>
           <div class='element'>
-            <h5>One Column</h5>
+            <h5 translate>one.column</h5>
             <koa-grid columns='1' cell-space='1em'>
               <template is='dom-repeat' items='[0,1,2,3,4,5]' index-as='index'>
                 <koa-card heading='Card [[index]]' image='http://placehold.it/200x75'>
@@ -329,7 +302,7 @@
             </koa-grid>
           </div>
           <div class='element'>
-            <h5>Two Columns</h5>
+            <h5 translate>two.columns</h5>
             <koa-grid columns='2' cell-space='1em'>
               <template is='dom-repeat' items='[0,1,2,3,4,5]' index-as='index'>
                 <koa-card heading='Card [[index]]' image='http://placehold.it/200x75'>
@@ -339,7 +312,7 @@
             </koa-grid>
           </div>
           <div class='element'>
-            <h5>Three Columns</h5>
+            <h5 translate>three.columns</h5>
             <koa-grid columns='3' cell-space='1em'>
               <template is='dom-repeat' items='[0,1,2,3,4,5]' index-as='index'>
                 <koa-card heading='Card [[index]]' image='http://placehold.it/200x75'>
@@ -350,9 +323,9 @@
           </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h4>Hoizontal</h4>
+          <h4>Horizontal</h4>
           <div class='element'>
-            <h5>One Column</h5>
+            <h5 translate>one.column</h5>
             <koa-grid columns='1' cell-space='1em'>
               <template is='dom-repeat' items='[0,1,2,3,4,5]' index-as='index'>
                 <koa-card heading='Card [[index]]' horizontal='true' image='http://placehold.it/200x75'>
@@ -362,7 +335,7 @@
             </koa-grid>
           </div>
           <div class='element'>
-            <h5>Two Columns</h5>
+            <h5 translate>two.columns</h5>
             <koa-grid columns='2' cell-space='1em'>
               <template is='dom-repeat' items='[0,1,2,3,4,5]' index-as='index'>
                 <koa-card heading='Card [[index]]' horizontal='true' image='http://placehold.it/200x75'>
@@ -372,7 +345,7 @@
             </koa-grid>
           </div>
           <div class='element'>
-            <h5>Three Columns</h5>
+            <h5 translate>three.columns</h5>
             <koa-grid columns='3' cell-space='1em'>
               <template is='dom-repeat' items='[0,1,2,3,4,5]' index-as='index'>
                 <koa-card heading='Card [[index]]' horizontal='true' image='http://placehold.it/200x75'>
@@ -387,91 +360,97 @@
     </section>
 
      <section class='koapp-element'>
-      <h3 id="koaiconbutton">Icon Button</h3>
+      <h3 id="koaiconbutton">koa-icon-button</h3>
       <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-          <h4>Standard</h4>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+          <h4 translate>standar.button</h4>
           <div class='element'>
-            <h5>Standard</h5>
-            <koa-icon-button bg  icon='favorite' title='heart'></koa-icon-button>
+            <h5 translate>standar.button</h5>
+            <koa-icon-button  icon='favorite' title='heart'></koa-icon-button>
           </div>
           <div class='element'>
-            <h5>Active/Selected</h5>
-            <koa-icon-button bg  selected icon='favorite' title='heart'></koa-icon-button>
+            <h5 translate>active.selected</h5>
+            <koa-icon-button selected icon='favorite' title='heart'></koa-icon-button>
           </div>
           <div class='element'>
-            <h5>Disabled</h5>
-            <koa-icon-button bg  disabled icon='favorite' title='heart'></koa-icon-button>
+            <h5 translate>disabled.button</h5>
+            <koa-icon-button disabled icon='favorite' title='heart'></koa-icon-button>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-          <h4>Big</h4>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+          <h4 translate>big.button</h4>
           <div class='element'>
-            <h5>Standard</h5>
+            <h5 translate>standar.button</h5>
             <koa-icon-button bg  big icon='favorite' title='heart'></koa-icon-button>
           </div>
           <div class='element'>
-            <h5>Active/Selected</h5>
+            <h5 translate>active.selected</h5>
             <koa-icon-button bg  big selected icon='favorite' title='heart'></koa-icon-button>
           </div>
           <div class='element'>
-            <h5>Disabled</h5>
+            <h5 translate>button.disabled</h5>
             <koa-icon-button bg  big disabled icon='favorite' title='heart'></koa-icon-button>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
           <h4>Link</h4>
           <div class='element'>
             <h5>Link</h5>
             <koa-icon-button  link icon='favorite' title='heart'></koa-icon-button>
           </div>
           <div class='element'>
-            <h5>Active/Selected</h5>
+            <h5 translate>active.selected</h5>
             <koa-icon-button link selected  icon='favorite' title='heart'></koa-icon-button>
           </div>
           <div class='element'>
-            <h5>Disabled</h5>
+            <h5 translate>button.disabled</h5>
             <koa-icon-button link disabled icon='favorite' title='heart'></koa-icon-button>
           </div>
         </div>
-
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+          <h4 translate>external.images</h4>
+          <div class='element'>
+            <h5>URL</h5>
+            <koa-icon-button icon="https://avatars.githubusercontent.com/u/11639138?v=3&s=40" title='Polymer'></koa-icon-button>
+          </div>
+        </div>
       </div>
     </section>
 
    <section class='koapp-element'>
-      <h3 id="koainputtextarea">Input</h3>
+      <h3 id="koainputtextarea">koa-input</h3>
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-          <h4>Standard</h4>
-          <div class='element'>
-            <h5>Standard</h5>
+          <h4 translate>standar.button</h4>
+          <div class='element not-clickable'>
+            <h5 translate>standar.button</h5>
             <koa-input value="Standar input"></koa-input>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <h5>Focused</h5>
             <koa-input focused value="Focused input"></koa-input>
           </div>
-          <div class='element'>
-            <h5>Selected no text</h5>
+          <div class='element not-clickable'>
+            <h5>No text selected</h5>
             <koa-input selected></koa-input>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <h5>Selected text</h5>
             <koa-input selected value="Selected text"></koa-input>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <h5>Selected password</h5>
             <koa-input selected type='password' value="Password text"></koa-input>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <h5>Disabled</h5>
             <koa-input disabled value="Disabled text"></koa-input>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <h5>Char counter text</h5>
             <koa-input char-counter value="Charcount" maxlength='10'></koa-input>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <h5>Invalid/Error</h5>
             <koa-input required value="Error text" auto-validate error-message='Needs some text!'></koa-input>
           </div>
@@ -479,49 +458,49 @@
 
         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
           <h4>With Icon</h4>
-          <div class='element'>
-            <h5>Standard</h5>
+          <div class='element not-clickable'>
+            <h5 translate>standar.button</h5>
             <koa-input value="Standar input">
               <iron-icon icon="icons:label-outline" prefix></iron-icon>
             </koa-input>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <h5>Focused</h5>
             <koa-input focused value="Focused input">
               <iron-icon icon="icons:label-outline" prefix></iron-icon>
             </koa-input>
           </div>
-          <div class='element'>
-            <h5>Selected no text</h5>
+          <div class='element not-clickable'>
+            <h5>No text selected</h5>
             <koa-input selected>
               <iron-icon icon="icons:label-outline" prefix></iron-icon>
             </koa-input>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <h5>Selected text</h5>
             <koa-input selected value="Selected text">
               <iron-icon icon="icons:label-outline" prefix></iron-icon>
             </koa-input>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <h5>Selected password</h5>
             <koa-input selected type='password' value="Password text">
               <iron-icon icon="icons:label-outline" prefix></iron-icon>
             </koa-input>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <h5>Disabled</h5>
             <koa-input disabled value="Disabled text">
               <iron-icon icon="icons:label-outline" prefix></iron-icon>
             </koa-input>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <h5>Char counter text</h5>
             <koa-input char-counter value="Charcount" maxlength='10'>
               <iron-icon icon="icons:label-outline" prefix></iron-icon>
             </koa-input>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <h5>Invalid/Error</h5>
             <koa-input required auto-validate value="Error text" error-message='Needs some text!'>
               <iron-icon icon="icons:label-outline" prefix></iron-icon>
@@ -531,69 +510,69 @@
 
         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
           <h4>With Label</h4>
-          <div class='element'>
+          <div class='element not-clickable'>
             <koa-input label='Standard' value="Standard text"></koa-input>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <koa-input focus label='Focused' value="Focused text"></koa-input>
           </div>
-          <div class='element'>
-            <koa-input selected label='Selected no text'></koa-input>
+          <div class='element not-clickable'>
+            <koa-input selected label='No text selected'></koa-input>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <koa-input selected label='Selected text' value="Selected text"></koa-input>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <koa-input selected label='Selected password' value="Password text" type='password'></koa-input>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <koa-input label='Disabled' value='Disabled text' disabled></koa-input>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <koa-input label='Char counter text' char-counter value="Charcount" maxlength='10'></koa-input>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <koa-input label='Invalid/Error' value="Error text" required auto-validate error-message='Needs some text!'></koa-input>
           </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
           <h4>With Label & Icon</h4>
-          <div class='element'>
+          <div class='element not-clickable'>
             <koa-input label='Standard' value="Standard text">
               <iron-icon icon="icons:label-outline" prefix></iron-icon>
             </koa-input>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <koa-input focus label='Focused' value="Focused text">
               <iron-icon icon="icons:label-outline" prefix></iron-icon>
             </koa-input>
           </div>
-          <div class='element'>
-            <koa-input selected label='Selected no text'>
+          <div class='element not-clickable'>
+            <koa-input selected label='No text selected'>
               <iron-icon icon="icons:label-outline" prefix></iron-icon>
             </koa-input>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <koa-input selected label='Selected text' value="Selected text">
               <iron-icon icon="icons:label-outline" prefix></iron-icon>
             </koa-input>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <koa-input selected label='Selected password' value="Password text" type='password'>
               <iron-icon icon="icons:label-outline" prefix></iron-icon>
             </koa-input>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <koa-input label='Disabled' value='Disabled text' disabled>
               <iron-icon icon="icons:label-outline" prefix></iron-icon>
             </koa-input>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <koa-input label='Char counter text' char-counter value="Charcount" maxlength='10'>
               <iron-icon icon="icons:label-outline" prefix></iron-icon>
             </koa-input>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <koa-input label='Invalid/Error' value="Error text" required auto-validate error-message='Needs some text!'>
               <iron-icon icon="icons:label-outline" prefix></iron-icon>
             </koa-input>
@@ -604,39 +583,39 @@
     </section>
 
     <section class='koapp-element'>
-       <h3 id="koainputtextarea">Textarea</h3>
+       <h3 id="koainputtextarea">koa-input-textarea</h3>
        <div class="row">
          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-           <h4>Standard</h4>
-           <div class='element'>
-             <h5>Standard</h5>
+           <h4 translate>standar.button</h4>
+           <div class='element not-clickable'>
+             <h5 translate>standar.button</h5>
              <koa-textarea value="Lorem ipsum dolor sit amet, consectetur adipisicing elit."></koa-textarea>
            </div>
-           <div class='element'>
+           <div class='element not-clickable'>
              <h5>Focused</h5>
              <koa-textarea focus value="Lorem ipsum dolor sit amet, consectetur adipisicing elit."></koa-textarea>
            </div>
-           <div class='element'>
-             <h5>Selected no text</h5>
+           <div class='element not-clickable'>
+             <h5>No text selected</h5>
              <koa-textarea selected></koa-textarea>
            </div>
-           <div class='element'>
+           <div class='element not-clickable'>
              <h5>Selected text</h5>
              <koa-textarea selected value="Lorem ipsum dolor sit amet, consectetur adipisicing elit."></koa-textarea>
            </div>
-           <div class='element'>
+           <div class='element not-clickable'>
              <h5>Selected password</h5>
              <koa-textarea selected type='password' value="Password text"></koa-textarea>
            </div>
-           <div class='element'>
+           <div class='element not-clickable'>
              <h5>Disabled</h5>
              <koa-textarea disabled value="Lorem ipsum dolor sit amet, consectetur adipisicing elit."></koa-textarea>
            </div>
-           <div class='element'>
+           <div class='element not-clickable'>
              <h5>Char counter text</h5>
              <koa-textarea char-counter value="Charcount" maxlength='10'></koa-textarea>
            </div>
-           <div class='element'>
+           <div class='element not-clickable'>
              <h5>Invalid/Error</h5>
              <koa-textarea required value="Error text" auto-validate error-message='Needs some text!'></koa-textarea>
            </div>
@@ -644,43 +623,43 @@
 
          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
            <h4>With Icon</h4>
-           <div class='element'>
-             <h5>Standard</h5>
+           <div class='element not-clickable'>
+             <h5 translate>standar.button</h5>
              <koa-textarea icon="icons:label-outline" value="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
              </koa-textarea>
            </div>
-           <div class='element'>
+           <div class='element not-clickable'>
              <h5>Focused</h5>
              <koa-textarea icon="icons:label-outline" focus value="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
              </koa-textarea>
            </div>
-           <div class='element'>
-             <h5>Selected no text</h5>
+           <div class='element not-clickable'>
+             <h5>No text selected</h5>
              <koa-textarea icon="icons:label-outline" selected>
              </koa-textarea>
            </div>
-           <div class='element'>
+           <div class='element not-clickable'>
              <h5>Selected text</h5>
              <koa-textarea icon="icons:label-outline" selected value="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
              </koa-textarea>
            </div>
-           <div class='element'>
+           <div class='element not-clickable'>
              <h5>Selected password</h5>
              <koa-textarea icon="icons:label-outline" selected type='password' value="Password text">
 
              </koa-textarea>
            </div>
-           <div class='element'>
+           <div class='element not-clickable'>
              <h5>Disabled</h5>
              <koa-textarea icon="icons:label-outline" disabled value="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
              </koa-textarea>
            </div>
-           <div class='element'>
+           <div class='element not-clickable'>
              <h5>Char counter text</h5>
              <koa-textarea icon="icons:label-outline" char-counter value="Charcount" maxlength='10'>
              </koa-textarea>
            </div>
-           <div class='element'>
+           <div class='element not-clickable'>
              <h5>Invalid/Error</h5>
              <koa-textarea icon="icons:label-outline" required auto-validate value="Error text" error-message='Needs some text!'>
              </koa-textarea>
@@ -689,64 +668,64 @@
 
          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
            <h4>With Label</h4>
-           <div class='element'>
+           <div class='element not-clickable'>
              <koa-textarea label='Standard' value="Lorem ipsum dolor sit amet, consectetur adipisicing elit."></koa-textarea>
            </div>
-           <div class='element'>
+           <div class='element not-clickable'>
              <koa-textarea focus label='Focused' value="Lorem ipsum dolor sit amet, consectetur adipisicing elit."></koa-textarea>
            </div>
-           <div class='element'>
-             <koa-textarea selected label='Selected no text'></koa-textarea>
+           <div class='element not-clickable'>
+             <koa-textarea selected label='No text selected'></koa-textarea>
            </div>
-           <div class='element'>
+           <div class='element not-clickable'>
              <koa-textarea selected label='Selected text' value="Lorem ipsum dolor sit amet, consectetur adipisicing elit."></koa-textarea>
            </div>
-           <div class='element'>
+           <div class='element not-clickable'>
              <koa-textarea selected label='Selected password' value="Password text" type='password'></koa-textarea>
            </div>
-           <div class='element'>
+           <div class='element not-clickable'>
              <koa-textarea label='Disabled' value='Lorem ipsum dolor sit amet, consectetur adipisicing elit.' disabled></koa-textarea>
            </div>
-           <div class='element'>
+           <div class='element not-clickable'>
              <koa-textarea label='Char counter text' char-counter value="Charcount" maxlength='10'></koa-textarea>
            </div>
-           <div class='element'>
+           <div class='element not-clickable'>
              <koa-textarea label='Invalid/Error' value="Error text" required auto-validate error-message='Needs some text!'></koa-textarea>
            </div>
          </div>
          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
            <h4>With Label & Icon</h4>
-           <div class='element'>
+           <div class='element not-clickable'>
              <koa-textarea label='Standard' icon="icons:label-outline"
              aria-disabled="true"
              value="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
              </koa-textarea>
            </div>
-           <div class='element'>
+           <div class='element not-clickable'>
              <koa-textarea focus label='Focused' icon="icons:label-outline" value="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
              </koa-textarea>
            </div>
-           <div class='element'>
-             <koa-textarea selected label='Selected no text' icon="icons:label-outline">
+           <div class='element not-clickable'>
+             <koa-textarea selected label='No text selected' icon="icons:label-outline">
              </koa-textarea>
            </div>
-           <div class='element'>
+           <div class='element not-clickable'>
              <koa-textarea selected label='Selected text' icon="icons:label-outline" value="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
              </koa-textarea>
            </div>
-           <div class='element'>
+           <div class='element not-clickable'>
              <koa-textarea selected label='Selected password' icon="icons:label-outline" value="Password text" type='password'>
              </koa-textarea>
            </div>
-           <div class='element'>
+           <div class='element not-clickable'>
              <koa-textarea label='Disabled' icon="icons:label-outline" value='Lorem ipsum dolor sit amet, consectetur adipisicing elit.' disabled>
              </koa-textarea>
            </div>
-           <div class='element'>
+           <div class='element not-clickable'>
              <koa-textarea label='Char counter text' icon="icons:label-outline" char-counter value="Charcount" maxlength='10'>
              </koa-textarea>
            </div>
-           <div class='element'>
+           <div class='element not-clickable'>
              <koa-textarea label='Invalid/Error' icon="icons:label-outline" value="Error text" required auto-validate error-message='Needs some text!'>
              </koa-textarea>
            </div>
@@ -758,45 +737,128 @@
 
     <section class='koapp-element'>
       <h3 id="koaitem">koa-item</h3>
-      <div class='list' role='listbox'>
-        <koa-item translate>element.inbox</koa-item>
-        <koa-item translate>element.starred</koa-item>
-        <koa-item translate>element.sentmail</koa-item>
-        <koa-item translate>element.draft</koa-item>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="element not-clickable">
+            <h5 translate>standar.button</h5>
+            <koa-item translate>element.inbox</koa-item>
+          </div>
+          <div class="element not-clickable">
+            <h5>Focused</h5>
+            <koa-item  focused translate>element.inbox</koa-item>
+          </div>
+          <div class="element not-clickable">
+            <h5 translate>active.selected</h5>
+            <koa-item selected translate>element.inbox</koa-item>
+          </div>
+          <div class="element not-clickable">
+            <h5 translate>disabled.button</h5>
+            <koa-item disabled translate>element.inbox</koa-item>
+          </div>
+        </div>
+
       </div>
-      <br>
-      <div class='list' role='listbox'>
-        <koa-item translate>
-          <koa-icon icon='inbox' item-icon></koa-icon>
-          <span translate>element.inbox</span>
-        </koa-item>
-        <koa-item translate>
-          <koa-icon icon='star' item-icon></koa-icon>
-          <span translate>element.starred</span>
-        </koa-item>
-      </div>
-      <br>
-      <div role='listbox'>
-        <koa-item>
-          <koa-item-body two-line>
-            <div translate>item.profile</div>
-            <div secondary translate>item.changephoto</div>
-          </koa-item-body>
-        </koa-item>
-        <koa-item>
-          <koa-item-body three-line>
-            <div>Ali Connors</div>
-            <div secondary translate>item.message</div>
-            <div secondary translate>item.message2</div>
-          </koa-item-body>
-        </koa-item>
-        <koa-item>
-          <koa-icon icon='home' item-icon></koa-icon>
-          <koa-item-body two-line>
-            <div>(650) 555-1234</div>
-            <div secondary translate>item.mobile</div>
-          </koa-item-body>
-        </koa-item>
+    </section>
+
+    <section class='koapp-element'>
+      <h3 id="koaitem">koa-item body</h3>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <h4 translate>standar.button</h4>
+          <div class="element not-clickable">
+            <h5>One Line</h5>
+            <koa-item>
+              <koa-item-body one-line>
+                <div translate>item.profile</div>
+              </koa-item-body>
+            </koa-item>
+          </div>
+          <div class="element not-clickable">
+            <h5>Two Lines</h5>
+            <koa-item>
+              <koa-item-body two-line>
+                <div translate>item.profile</div>
+                <div secondary translate>item.changephoto</div>
+              </koa-item-body>
+            </koa-item>
+          </div>
+          <div class="element not-clickable">
+            <h5>Three Lines</h5>
+            <koa-item>
+              <koa-item-body three-line>
+                <div>Ali Connors</div>
+                <div secondary translate>item.message</div>
+                <div secondary translate>item.message2</div>
+              </koa-item-body>
+            </koa-item>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <h4>With Icons</h4>
+          <div class="element not-clickable">
+            <h5>One Line</h5>
+            <koa-item>
+              <koa-icon icon='home' item-icon></koa-icon>
+              <koa-item-body one-line>
+                <div translate>item.profile</div>
+              </koa-item-body>
+            </koa-item>
+          </div>
+          <div class="element not-clickable">
+            <h5>Two Lines</h5>
+            <koa-item>
+              <koa-icon icon='home' item-icon></koa-icon>
+              <koa-item-body two-line>
+                <div translate>item.profile</div>
+                <div secondary translate>item.changephoto</div>
+              </koa-item-body>
+            </koa-item>
+          </div>
+          <div class="element not-clickable">
+            <h5>Three Lines</h5>
+            <koa-item>
+              <koa-icon icon='home' item-icon></koa-icon>
+              <koa-item-body three-line>
+                <div>Ali Connors</div>
+                <div secondary translate>item.message</div>
+                <div secondary translate>item.message2</div>
+              </koa-item-body>
+            </koa-item>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <h4>With Actions</h4>
+          <div class="element not-clickable">
+            <h5>One Line</h5>
+            <koa-item>
+              <koa-item-body actions one-line>
+                <div translate>item.profile</div>
+              </koa-item-body>
+              <koa-icon-button icon="star" alt="favourite this!"></koa-icon-button>
+            </koa-item>
+          </div>
+          <div class="element not-clickable">
+            <h5>Two Lines</h5>
+            <koa-item>
+              <koa-item-body actions two-line>
+                  <div>(650) 555-1234</div>
+                  <div secondary translate>item.changephoto</div>
+              </koa-item-body>
+              <koa-icon-button icon="star" alt="favourite this!"></koa-icon-button>
+            </koa-item>
+          </div>
+          <div class="element not-clickable">
+            <h5>Three Linea</h5>
+            <koa-item>
+              <koa-item-body actions three-line>
+                <div>Ali Connors</div>
+                <div secondary translate>item.message</div>
+                <div secondary translate>item.message2</div>
+              </koa-item-body>
+              <koa-icon-button icon="star" alt="favourite this!"></koa-icon-button>
+            </koa-item>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -808,8 +870,8 @@
           <h3> No selected </h3>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <h4> Standard </h4>
-          <div class="element">
+          <h4 translate> standar.button </h4>
+          <div class="element not-clickable">
             <koa-menu>
               <koa-item translate>element.inbox</koa-item>
               <koa-item translate>element.starred</koa-item>
@@ -820,7 +882,7 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <h4> Icon </h4>
-          <div class="element">
+          <div class="element not-clickable">
             <koa-menu>
               <koa-item>
                 <iron-icon icon="inbox" item-icon></iron-icon>
@@ -847,8 +909,8 @@
           <h3> One selected </h3>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <h4> Standard </h4>
-          <div class="element">
+          <h4 translate> standar.button </h4>
+          <div class="element not-clickable">
             <koa-menu id="koamenu1" selected="1">
               <koa-item translate>element.inbox</koa-item>
               <koa-item selected translate>element.starred</koa-item>
@@ -859,7 +921,7 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <h4> Icon </h4>
-          <div class="element">
+          <div class="element not-clickable">
             <koa-menu>
               <koa-item>
                 <iron-icon icon="inbox" item-icon></iron-icon>
@@ -886,8 +948,8 @@
           <h3> Multi selected </h3>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <h4> Standard </h4>
-          <div class="element">
+          <h4 translate> standar.button </h4>
+          <div class="element not-clickable">
             <koa-menu id="koamenu1" multi>
               <koa-item translate>element.inbox</koa-item>
               <koa-item selected translate>element.starred</koa-item>
@@ -898,7 +960,7 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <h4> Icon </h4>
-          <div class="element">
+          <div class="element not-clickable">
             <koa-menu multi>
               <koa-item>
                 <iron-icon icon="inbox" item-icon></iron-icon>
@@ -924,7 +986,7 @@
     </section>
 
    <section class='koapp-element'>
-      <h3 id="koasubmenus">koa-submenu</h3>
+      <h3 id="koasubmenus">Menu koa-submenu</h3>
 
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
@@ -1079,7 +1141,7 @@
       <template id='DemoMenuButton' is='dom-bind'>
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h4>Standard</h4>
+          <h4 translate>standar.button</h4>
           <div class="element">
             <koa-menu-button>
               <koa-icon-button id="testiconbutton" icon='menu' class='dropdown-trigger' alt='menu'></koa-icon-button>
@@ -1105,7 +1167,7 @@
           </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h4>Active/Selected</h4>
+          <h4>active.selected</h4>
           <div class="element">
             <koa-menu-button selected>
               <koa-icon-button id="testiconbutton" icon='menu' class='dropdown-trigger' alt='menu'></koa-icon-button>
@@ -1144,7 +1206,7 @@
       <h3 id="koaprogress">koa-progress</h3>
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h4>Standard</h4>
+          <h4 translate>standar.button</h4>
           <div class='element'>
             <koa-progress indeterminate></koa-progress>
             <br>
@@ -1167,9 +1229,9 @@
       <h3 id="koaslider">koa-slider</h3>
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-          <h4>Standard</h4>
+          <h4 translate>standar.button</h4>
           <div class='element'>
-            <h5>Standard</h5>
+            <h5 translate>standar.button</h5>
             <koa-slider value='21'></koa-slider>
           </div>
           <div class='element'>
@@ -1177,7 +1239,7 @@
             <koa-slider focused value='15' secondary-progress='50'></koa-slider>
           </div>
           <div class='element'>
-            <h5>Active/Selected</h5>
+            <h5>active.selected</h5>
             <koa-slider selected value='78' secondary-progress='85'></koa-slider>
           </div>
           <div class='element'>
@@ -1191,46 +1253,46 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
           <h4>At min</h4>
-          <div class='element'>
-            <h5>Standard</h5>
+          <div class='element not-clickable'>
+            <h5 translate>standar.button</h5>
             <koa-slider value='0'></koa-slider>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <h5>Focused</h5>
             <koa-slider focused value='0'></koa-slider>
           </div>
-          <div class='element'>
-            <h5>Active/Selected</h5>
+          <div class='element not-clickable'>
+            <h5 translate>active.selected</h5>
             <koa-slider  selected value='0' secondary-progress='0'></koa-slider>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <h5>Editable</h5>
             <koa-slider class='red' value='0' max='0' editable></koa-slider>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <h5>Disabled</h5>
             <koa-slider disabled value='0'></koa-slider>
           </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
           <h4>At max</h4>
-          <div class='element'>
-            <h5>Standard</h5>
+          <div class='element not-clickable'>
+            <h5 translate>standar.button</h5>
             <koa-slider value='255'></koa-slider>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <h5>Focused</h5>
             <koa-slider focused value='255'></koa-slider>
           </div>
-          <div class='element'>
-            <h5>Active/Selected</h5>
+          <div class='element not-clickable'>
+            <h5>active.selected</h5>
             <koa-slider selected value='255' secondary-progress='255'></koa-slider>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <h5>Editable</h5>
             <koa-slider class='red' value='255' max='255' editable></koa-slider>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <h5>Disabled</h5>
             <koa-slider disabled value='255'></koa-slider>
           </div>
@@ -1241,18 +1303,44 @@
     </section>
 
     <section class='koapp-element'>
-      <h3 id="koaspinner">koa-spinner</h3>
-      <koa-spinner active></koa-spinner>
-    </section>
+     <h3 id="koaradio-button">koa-radio-button</h3>
+     <div class="row">
+       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+         <div class='element not-clickable'>
+           <koa-radio-button translate>standar.button</koa-radio-button>
+         </div>
+       </div>
+       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+         <div class='element not-clickable'>
+           <koa-radio-button focused>Focused</koa-radio-button>
+         </div>
+       </div>
+       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+         <div class='element not-clickable'>
+           <koa-radio-button checked>active.selected</koa-radio-button>
+         </div>
+       </div>
+       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+         <div class='element not-clickable'>
+           <koa-radio-button subtext="Some subtext" translate>with.subtext</koa-radio-button>
+         </div>
+       </div>
+       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+         <div class='element not-clickable'>
+           <koa-radio-button disabled translate>disabled.checkbox</koa-radio-button>
+         </div>
+       </div>
+     </div>
+   </section>
 
     <section class='koapp-element'>
       <h3 id="koatabs">koa-tabs</h3>
 
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <h4>Standard</h4>
-          <div class="element">
-            <h5>Standard</h5>
+          <h4 translate>standar.button</h4>
+          <div class="element not-clickable">
+            <h5 translate>standar.button</h5>
             <koa-tabs>
               <koa-tab translate>element.itemone</koa-tab>
               <koa-tab translate>element.itemtwo</koa-tab>
@@ -1271,7 +1359,7 @@
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <h4>Scrollable</h4>
           <div class="element">
-            <h5>Standard</h5>
+            <h5 translate>standar.button</h5>
             <koa-tabs id='scrollableTabs' scrollable>
               <koa-tab translate>element.itemnumberone</koa-tab>
               <koa-tab translate>element.itemtwo</koa-tab>
@@ -1288,7 +1376,7 @@
             </koa-tabs>
           </div>
           <div class="element">
-            <h5>Active/Selected</h5>
+            <h5 translate>active.selected</h5>
             <koa-tabs id='scrollableTabs' selected='2' selected scrollable>
               <koa-tab translate>element.itemnumberone</koa-tab>
               <koa-tab translate>element.itemtwo</koa-tab>
@@ -1310,19 +1398,19 @@
     </section>
 
     <section class='koapp-element'>
-      <h3 id="koatabs">koa-tab</h3>
+      <h3 id="koatabs">Tabs koa-tab</h3>
 
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <div class="element">
-            <h5>Standard</h5>
+          <div class="element not-clickable">
+            <h5 translate>standar.button</h5>
             <koa-tabs>
               <koa-tab translate>element.itemone</koa-tab>
               <koa-tab translate>element.itemtwo</koa-tab>
               <koa-tab translate>element.itemthird</koa-tab>
             </koa-tabs>
           </div>
-          <div class="element">
+          <div class="element not-clickable">
             <h5>Focused</h5>
             <koa-tabs selected='1'>
               <koa-tab translate>element.itemone</koa-tab>
@@ -1330,15 +1418,15 @@
               <koa-tab translate>element.itemthird</koa-tab>
             </koa-tabs>
           </div>
-          <div class="element">
-            <h5>Active/Selected</h5>
+          <div class="element not-clickable">
+            <h5>active.selected</h5>
             <koa-tabs selected='1'>
               <koa-tab translate>element.itemone</koa-tab>
               <koa-tab translate>element.itemtwo</koa-tab>
               <koa-tab translate>element.itemthird</koa-tab>
             </koa-tabs>
           </div>
-          <div class="element">
+          <div class="element not-clickable">
             <h5>Disabled</h5>
             <koa-tabs>
               <koa-tab translate>element.itemone</koa-tab>
@@ -1352,29 +1440,29 @@
     </section>
 
    <section class='koapp-element'>
-      <h3 id="koatogglebutton">Toggle Button</h3>
+      <h3 id="koatogglebutton">koa-toggle-button</h3>
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <h4>Standard</h4>
-          <div class='element'>
-            <koa-toggle-button id="toggletest">Standard</koa-toggle-button>
+          <h4 translate>standar.button</h4>
+          <div class='element not-clickable'>
+            <koa-toggle-button id="toggletest" translate>standar.button</koa-toggle-button>
           </div>
-          <div class='element'>
-            <koa-toggle-button checked>Active/Selected</koa-toggle-button>
+          <div class='element not-clickable'>
+            <koa-toggle-button checked translate>active.selected</koa-toggle-button>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <koa-toggle-button disabled translate>disabled.checkbox</koa-toggle-button>
           </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <h4>Big</h4>
-          <div class='element'>
-            <koa-toggle-button big id="toggletest">Standard</koa-toggle-button>
+          <h4 translate>big.button</h4>
+          <div class='element not-clickable'>
+            <koa-toggle-button big id="toggletest" translate>standar.button</koa-toggle-button>
           </div>
-          <div class='element'>
-            <koa-toggle-button big checked>Active/Selected</koa-toggle-button>
+          <div class='element not-clickable'>
+            <koa-toggle-button big checked>active.selected</koa-toggle-button>
           </div>
-          <div class='element'>
+          <div class='element not-clickable'>
             <koa-toggle-button big disabled translate>disabled.checkbox</koa-toggle-button>
           </div>
         </div>
@@ -1397,7 +1485,6 @@
             <h4>Two lines</h4>
             <koa-toolbar class="medium-tall">
               <koa-icon-button icon='menu'></koa-icon-button>
-              <span class='title'>Toolbar</span>
               <koa-icon-button icon='refresh'></koa-icon-button>
               <koa-icon-button icon='add'>+</koa-icon-button>
 
@@ -1422,7 +1509,7 @@
           </div>
           <div class="element">
             <h4>Image</h4>
-            <koa-toolbar class="tall" backgroundimage="http://lorempixel.com/400/400">
+            <koa-toolbar class="tall" backgroundimage="http://placehold.it/400x400">
               <koa-icon-button icon='menu'></koa-icon-button>
               <span class='title'>Toolbar</span>
               <koa-icon-button icon='refresh'></koa-icon-button>
