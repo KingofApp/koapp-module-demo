@@ -41,7 +41,8 @@
   "images": {
     "list": "modules/demo/images/list.png",
     "screenshots": [
-      "modules/demo/images/screenshot01.png"
+      "modules/demo/images/screenshot01.png",
+      "modules/demo/images/screenshot02.png"
     ],
     "popover": "modules/demo/images/popover.png",
     "banner": "modules/demo/images/banner.png",
