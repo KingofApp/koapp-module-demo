@@ -15,7 +15,7 @@
   },
   "icon": "room",
   "type": "A",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "author": "King of app",
   "category": ["module"],
   "price": 0,
@@ -28,7 +28,7 @@
   ],
   "view": "modules/demo/index.html",
   "files": [
-    "modules/demo/controller.js", "modules/demo/style.html"
+    "modules/demo/controller.js", "modules/demo/style.html", "modules/demo/grid/grid.css"
   ],
   "scope": {"demoKey": "demo text"},
   "libs": [],
@@ -41,7 +41,8 @@
   "images": {
     "list": "modules/demo/images/list.png",
     "screenshots": [
-      "modules/demo/images/screenshot01.png"
+      "modules/demo/images/screenshot01.png",
+      "modules/demo/images/screenshot02.png"
     ],
     "popover": "modules/demo/images/popover.png",
     "banner": "modules/demo/images/banner.png",
