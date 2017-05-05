@@ -14,110 +14,497 @@
   }
 </style>
 
+
+<section class="koapp-element">
+  <h3 id="koaalert">koa-alert</h3>
+  <div class="element">
+    <div class="row">
+      <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
+        <koa-alert color="alert-success">
+          <strong>Well done!</strong> You successfully read this important alert message.
+        </koa-alert>
+        <koa-alert color="alert-info">
+          <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+        </koa-alert>
+        <koa-alert color="warning">
+          <strong>Warning!</strong> Better check yourself, you're not looking too good.
+        </koa-alert>
+        <koa-alert color="alert-danger">
+          <strong>Oh snap!</strong> Change a few things up and try submitting again.
+        </koa-alert>
+      </div>
+      <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
+        <koa-alert color="alert-success" dismissable>
+          <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+        </koa-alert>
+        <koa-alert color="alert-info" dismissable>
+          <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
+        </koa-alert>
+        <koa-alert color="warning" dismissable>
+          <strong>Warning!</strong> Better check yourself, you're <a href="#" class="alert-link">not looking too good</a>.
+        </koa-alert>
+        <koa-alert color="alert-danger" dismissable>
+          <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+        </koa-alert>
+      </div>
+    </div>
+
+  </div>
+</section>
 <section class='koapp-element'>
   <h3 id="koabadge">koa-badge</h3>
   <div class='element not-clickable'>
-    <koa-icon-button id='number' icon='add-box' alt='inbox'></koa-icon-button>
-    <koa-badge for='number' label='4'></koa-badge>
+    <div class="row">
+      <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
+        <h5>Standard</h5>
+        <div class="row">
+          <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+            <koa-badge color="default">Default</koa-badge>
+            <koa-badge color="primary">Primary</koa-badge>
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+            <koa-badge color="success">Success</koa-badge>
+            <koa-badge color="info">Info</koa-badge>
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+            <koa-badge color="warning">Warning</koa-badge>
+            <koa-badge color="danger">Danger</koa-badge>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
+        <h5>Pill</h5>
+        <div class="row">
+          <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+            <koa-badge color="default" pill>Default</koa-badge>
+            <koa-badge color="primary" pill>Primary</koa-badge>
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+            <koa-badge color="success" pill>Success</koa-badge>
+            <koa-badge color="info" pill>Info</koa-badge>
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+            <koa-badge color="warning" pill>Warning</koa-badge>
+            <koa-badge color="danger" pill>Danger</koa-badge>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <koa-icon-button id='icon' icon='account-box' alt='person'></koa-icon-button>
-  <koa-badge icon='android' for='icon' label='happy'></koa-badge>
+
+
 </section>
+
+
 
 <section class='koapp-element'>
   <h3 id="koabutton">koa-button</h3>
+  <h5>Button color</h5>
   <div class="row">
-    <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+    <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
       <div class='element not-clickable'>
-        <koa-button translate>standar.button</koa-button>
-      </div>
-      <div class='element not-clickable'>
-        <koa-button pressed translate>active.selected</koa-button>
-      </div>
-      <div class='element not-clickable'>
-        <koa-button disabled translate>disabled.button</koa-button>
+        <koa-button>btn-secondary</koa-button>
       </div>
     </div>
-    <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+    <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
       <div class='element not-clickable'>
-        <koa-button big translate>standar.button</koa-button>
+        <koa-button color="btn-primary">btn-primary</koa-button>
       </div>
       <div class='element not-clickable'>
-        <koa-button pressed big translate>active.selected</koa-button>
-      </div>
-      <div class='element not-clickable'>
-        <koa-button big disabled translate>disabled.button</koa-button>
+        <koa-button color="btn-success">btn-success</koa-button>
       </div>
     </div>
-    <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+    <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
       <div class='element not-clickable'>
-        <koa-button link translate>standar.button</koa-button>
+        <koa-button color="btn-info">btn-info</koa-button>
       </div>
       <div class='element not-clickable'>
-        <koa-button link pressed translate>active.selected</koa-button>
+        <koa-button color="btn-warning">btn-warning</koa-button>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+      <div class='element not-clickable'>
+        <koa-button color="btn-danger">btn-danger</koa-button>
       </div>
       <div class='element not-clickable'>
-        <koa-button link disabled translate>disabled.button</koa-button>
+        <koa-button color="btn-link">btn-link</koa-button>
+      </div>
+    </div>
+
+  </div>
+  <h5>Button outline</h5>
+  <div class="row">
+    <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+      <div class='element not-clickable'>
+        <koa-button color="btn-outline-primary">btn-outline-primary</koa-button>
+      </div>
+      <div class='element not-clickable'>
+        <koa-button color="btn-outline-success">btn-outline-success</koa-button>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+      <div class='element not-clickable'>
+        <koa-button color="btn-outline-info">btn-outline-info</koa-button>
+      </div>
+      <div class='element not-clickable'>
+        <koa-button color="btn-outline-warning">btn-outline-warning</koa-button>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+      <div class='element not-clickable'>
+        <koa-button color="btn-outline-danger">btn-outline-danger</koa-button>
+      </div>
+      <div class='element not-clickable'>
+        <koa-button color="btn-outline-link">btn-outline-link</koa-button>
       </div>
     </div>
   </div>
+  <h5>Size</h5>
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+        <koa-button color="btn-primary" size="btn-lg">Large</koa-button>
+        <koa-button color="btn-primary" size="btn-sm">Small</koa-button>
+    </div>
+  </div>
+  <h5>Active</h5>
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+        <koa-button color="btn-primary" active>btn-primary-active</koa-button>
+        <koa-button color="btn-success" active>btn-success-active</koa-button>
+        <koa-button color="btn-info" active>btn-info-active</koa-button>
+        <koa-button color="btn-warning" active>btn-warning-active</koa-button>
+        <koa-button color="btn-danger" active>btn-danger-active</koa-button>
+    </div>
+  </div>
+  <h5>disabled</h5>
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+      <koa-button color="btn-primary" disabled>btn-primary-active</koa-button>
+      <koa-button color="btn-success" disabled>btn-success-active</koa-button>
+      <koa-button color="btn-info" disabled>btn-info-active</koa-button>
+      <koa-button color="btn-warning" disabled>btn-warning-active</koa-button>
+      <koa-button color="btn-danger" disabled>btn-danger-active</koa-button>
+    </div>
+  </div>
+  <h5>Block</h5>
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+        <koa-button color="btn-primary" block>Block</koa-button>
+        <koa-button color="btn-secondary" block>Block</koa-button>
+    </div>
+  </div>
+</div>
 
+</section>
+
+<section class="koapp-element">
+  <h3 id="koabuttongroup">koa-button-group</h3>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+    </div>
   </div>
 
 </section>
+
  <section class='koapp-element'>
    <h3 id="koacard">koa-card</h3>
     <div class="row not-clickable">
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
         <h3 translate>standar.button</h3>
-        <koa-card heading='Standar' translate subtext="Some subtext" image='http://placehold.it/325x190'>
-          <div class='card-content'>
-            Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae.
-          </div>
-          <div class='card-actions'>
-            <koa-button link translate>cancel.button</koa-button>
-            <koa-button link pressed translate>dialog.accept</koa-button>
+        <koa-card title='Standar' img-position="top" subtitle="Some subtext" text="Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae." image='http://placehold.it/325x190'>
+          <div class='card-block'>
+            <koa-button color="btn-link" translate>cancel.button</koa-button>
+            <koa-button color="btn-link" active translate>dialog.accept</koa-button>
           </div>
         </koa-card>
-        <koa-card heading='Photo + Title + Subtitle + Text' subtext="Some subtext"  image='http://placehold.it/190x325'>
-          <div class='card-content'>
-            Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae.
+
+        <koa-card text="This is some text within a card block.">
+        </koa-card>
+
+        <koa-card title='Photo + Title + Subtitle + Text' text="Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae." subtitle="Some subtext"  image='http://placehold.it/190x325'>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+          <div class="card-block">
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
           </div>
         </koa-card>
-        <koa-card heading='Photo + Title + Text' image='http://placehold.it/400x100'>
-          <div class='card-content'>
-            Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae.
-          </div>
+
+        <koa-card color="primary" title='Photo + Title + Text' header="Featured" text="Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae." image='http://placehold.it/400x100'>
         </koa-card>
-        <koa-card heading='Photo + Title' image='http://placehold.it/325x190'>
+
+        <koa-card title='Photo + Title' inverse image='http://placehold.it/325x190'>
+        </koa-card>
+
+        <koa-card header="Quote">
+          <div class="card-block">
+            <blockquote class="card-blockquote">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+          </div>
         </koa-card>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
         <h3>Horizontal</h3>
-        <koa-card horizontal='true' heading='Standard' subtext="Some subtext" image='http://placehold.it/325x190'>
-          <div class='card-content'>
-            Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae.
-          </div>
-          <div class='card-actions'>
-            <koa-button link translate>card.no</koa-button>
-            <koa-button link translate>card.yes</koa-button>
+        <koa-card horizontal='true' title='Standard' subtitle="Some subtext" text="Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae.
+" image='http://placehold.it/325x190'>
+          <div class="card-block">
+            <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </koa-card>
-        <koa-card horizontal='true' heading='Photo + Title + Subtitle + Text' subtext="Some subtext" image='http://placehold.it/400x100'>
-          <div class='card-content'>
+        <koa-card horizontal='true' title='Standard' subtitle="Some subtext">
+          <div class="card-block">
+            <div class='card-text'>
+              Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae.
+            </div>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </koa-card>
+        <koa-card horizontal='true' title='Photo + Title + Subtitle + Text' subtitle="Some subtext" image='http://placehold.it/400x100'>
+          <div class='card-block'>
             Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae.
           </div>
         </koa-card>
-        <koa-card horizontal='true' heading='Photo + Title + Text' image='http://placehold.it/190x325'>
-          <div class='card-content'>
+        <koa-card horizontal='true' title='Photo + Title + Text' image='http://placehold.it/190x325'>
+          <div class='card-block'>
             Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae.
           </div>
         </koa-card>
-        <koa-card horizontal='true' heading='Photo + Title' image='http://placehold.it/350x350'>
+        <koa-card horizontal='true' text='Photo + Title' image='http://placehold.it/350x150'>
+        </koa-card>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h5>Card Inverse</h5>
+        <koa-card inverse color="card-primary">
+          <div class="card-block">
+          <blockquote class="card-blockquote">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          </blockquote>
+        </div>
+        </koa-card>
+        <koa-card inverse color="card-success">
+          <div class="card-block">
+          <blockquote class="card-blockquote">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          </blockquote>
+        </div>
+        </koa-card>
+        <koa-card inverse color="card-info">
+          <div class="card-block">
+          <blockquote class="card-blockquote">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          </blockquote>
+        </div>
+        </koa-card>
+        <koa-card inverse color="card-warning">
+          <div class="card-block">
+          <blockquote class="card-blockquote">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          </blockquote>
+        </div>
+        </koa-card>
+        <koa-card inverse color="card-danger">
+          <div class="card-block">
+          <blockquote class="card-blockquote">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          </blockquote>
+        </div>
+        </koa-card>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h5>Card Outline</h5>
+        <koa-card color="card-outline-primary">
+          <div class="card-block">
+          <blockquote class="card-blockquote">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          </blockquote>
+        </div>
+        </koa-card>
+        <koa-card color="card-outline-success">
+          <div class="card-block">
+          <blockquote class="card-blockquote">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          </blockquote>
+        </div>
+        </koa-card>
+        <koa-card color="card-outline-info">
+          <div class="card-block">
+          <blockquote class="card-blockquote">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          </blockquote>
+        </div>
+        </koa-card>
+        <koa-card color="card-outline-warning">
+          <div class="card-block">
+          <blockquote class="card-blockquote">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          </blockquote>
+        </div>
+        </koa-card>
+        <koa-card color="card-outline-danger">
+          <div class="card-block">
+          <blockquote class="card-blockquote">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          </blockquote>
+        </div>
+        </koa-card>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h5>Content Alignment</h5>
+        <koa-card alignment="left">
+          <div class="card-block">
+           <h4 class="card-title">Special title treatment</h4>
+           <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+           <a href="#" class="btn btn-primary">Go somewhere</a>
+         </div>
+        </koa-card>
+        <koa-card alignment="center">
+          <div class="card-block">
+           <h4 class="card-title">Special title treatment</h4>
+           <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+           <a href="#" class="btn btn-primary">Go somewhere</a>
+         </div>
+        </koa-card>
+        <koa-card alignment="right">
+          <div class="card-block">
+           <h4 class="card-title">Special title treatment</h4>
+           <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+           <a href="#" class="btn btn-primary">Go somewhere</a>
+         </div>
         </koa-card>
       </div>
     </div>
   </section>
+
+  <section class='koapp-element'>
+   <h3 id="koacard-group">koa-card-group</h3>
+   <div class="row">
+     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+       <h5>Card Groups</h5>
+        <koa-card-group>
+          <koa-card image="http://placehold.it/250x150" title="Card title" text="This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.">
+            <div class="card-block">
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </koa-card>
+          <koa-card image="http://placehold.it/250x150" title="Card title" text="This card has supporting text below as a natural lead-in to additional content.">
+            <div class="card-block">
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </koa-card>
+          <koa-card image="http://placehold.it/250x150" title="Card title" text="This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.">
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </koa-card>
+        </koa-card-group>
+     </div>
+     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+       <h5>Card Decks</h5>
+        <koa-card-group deck>
+          <koa-card image="http://placehold.it/250x150" title="Card title" text="This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.">
+            <div class="card-block">
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </koa-card>
+          <koa-card image="http://placehold.it/250x150" title="Card title" text="This card has supporting text below as a natural lead-in to additional content.">
+            <div class="card-block">
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </koa-card>
+          <koa-card image="http://placehold.it/250x150" title="Card title" text="This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.">
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </koa-card>
+        </koa-card-group>
+     </div>
+   </div>
+ </section>
+ <section class='koapp-element'>
+  <h3 id="koacard-columns">koa-card-columns</h3>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <koa-card-columns>
+        <koa-card image="http://placehold.it/250x150" title="Card title" text="This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.">
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </koa-card>
+        <koa-card color="card-outline-warning">
+          <div class="card-block">
+          <blockquote class="card-blockquote">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          </blockquote>
+        </div>
+        </koa-card>
+        <koa-card text="This is some text within a card block.">
+        </koa-card>
+
+        <koa-card title='Photo + Title + Subtitle + Text' text="Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae." subtitle="Some subtext"  image='http://placehold.it/190x325'>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+          <div class="card-block">
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </koa-card>
+
+        <koa-card color="primary" title='Photo + Title + Text' header="Featured" text="Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae." image='http://placehold.it/400x100'>
+        </koa-card>
+
+        <koa-card title='Photo + Title' inverse image='http://placehold.it/325x190'>
+        </koa-card>
+      </koa-card-columns>
+    </div>
+  </div>
+</section>
+
+<section class='koapp-element'>
+   <h3 id="koacarousel">koa-carousel</h3>
+
+     <div class="row justify-content-center">
+       <div class="col-xl-10 col-lg-10 col-md-10 col-12 col-sm-12">
+         <koa-carousel id='DemoCarousel' controls items=""></koa-carousel>
+       </div>
+     </div>
+
+ </section>
+
+ <script>
+   var items =['http://placehold.it/325x190','http://placehold.it/325x190','http://placehold.it/325x190','http://placehold.it/325x190','http://placehold.it/325x190'];
+   document.getElementById('DemoCarousel').setAttribute('items', items);
+ </script>
+
+
 
    <section class='koapp-element'>
     <h3 id="koacheckbox">koa-checkbox</h3>
