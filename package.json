@@ -1,5 +1,5 @@
 {
-    "name": "demo",
+    "name": "koapp-module-demo",
     "version": "0.0.13",
     "description": "A module that includes all configurable elements to create a theme.",
     "directories": {
