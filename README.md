@@ -16,5 +16,5 @@ A module that includes all configurable elements to create a theme.
 ### Details:
 
 - Author: King of app
-- Version: 0.0.13
+- Version: 0.0.14
 - Homepage:
